@@ -6,15 +6,15 @@ import Link from "next/link";
 import Date from "../components/date";
 
 export async function getStaticProps() {
-  const allprojectsData = getSortedProjectsData();
+  const allProjectsData = getSortedProjectsData();
   return {
     props: {
-      allprojectsData,
+      allProjectsData,
     },
   };
 }
 
-export default function Home({ allprojectsData }) {
+export default function Home({ allProjectsData }) {
   return (
     <Layout home>
       <Head>
@@ -29,7 +29,7 @@ export default function Home({ allprojectsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>My Projects</h2>
         <ul className={utilStyles.list}>
-          {allprojectsData.map(({ id, date, title }) => (
+          {allProjectsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/projects/${id}`}>{title}</Link>
               <br />

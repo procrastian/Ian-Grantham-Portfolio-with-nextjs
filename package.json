@@ -15,6 +15,6 @@
     "remark-html": "^16.0.1"
   },
   "engines": {
-    "node": ">=18"
+    "node": "18.x"
   }
 }
