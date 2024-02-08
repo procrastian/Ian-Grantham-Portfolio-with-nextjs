@@ -30,9 +30,10 @@ body {
 .blackoutLayer {
   background-image: url("../public/asset/Raw-Seamless-Circuit-Board-Pattern.png");
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100vh;
   width: 100vw;
+  background-size: cover;
 }
 
 * {
