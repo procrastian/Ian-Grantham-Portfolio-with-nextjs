@@ -22,7 +22,7 @@ export default function Home({ allProjectsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hello, I'm Ian. I'm a Junior Software Developer interested in Modern
+          Hello, I'm Ian, a Junior Software Developer interested in Modern
           Web Development.
         </p>
       </section>
