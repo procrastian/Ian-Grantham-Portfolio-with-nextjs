@@ -36,11 +36,10 @@ export default function Project({ projectData }) {
           <Date dateString={projectData.date} />
           <br></br>
           <Link className="links" href={projectData.view} target="_blank">
-            View Live
+            <h2>View Live</h2>
           </Link>
-          <br></br>
           <Link className="links" href={projectData.github} target="_blank">
-            View Github
+            <h2>View Github</h2>
           </Link>
         </div>
         <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />

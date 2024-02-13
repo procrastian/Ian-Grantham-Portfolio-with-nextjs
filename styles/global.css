@@ -57,7 +57,7 @@ img {
 .icon {
   height: 40px;
   width: 40px;
-  padding: 5px;
+  margin: 5px;
   transition: all .2s ease-in-out
 }
 
