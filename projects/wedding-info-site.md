@@ -1,8 +1,9 @@
 ---
-title: 'Wedding Information and RSVP site'
+title: 'Wedding information website'
 date: '2024-02-06'
 view: https://louiseandgregwedding.vercel.app/
 github: https://github.com/procrastian/wedding-RSVP-site
+tagline: 'A bespoke website for upcoming event details'
 ---
 
 A bespoke Website designed and built myself to the client's sepcifications using Nextjs. The site is also accessed via a QR code on the physical 'Save the Date' letters.

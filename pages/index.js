@@ -22,8 +22,7 @@ export default function Home({ allProjectsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hello, I'm Ian, a Junior Software Developer interested in Modern
-          Web Development.
+          My name is Ian Grantham, I'm a junior full stack software engineer based in the UK. I'm passionate about problem solving modern web development problems, while creating engaging UX focussed designs.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
