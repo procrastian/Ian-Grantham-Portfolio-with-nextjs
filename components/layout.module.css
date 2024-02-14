@@ -1,8 +1,9 @@
 .container {
-  max-width: 36rem;
   padding: 1rem;
+  max-width: 36rem;
   margin: 3rem auto 6rem;
-  background-color: black ;
+  box-shadow: 0 0 20px 10px black;
+  background-color: black;
 }
 
 .header {
@@ -13,4 +14,10 @@
 
 .backToHome {
   margin: 3rem 0 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 3rem auto 3rem;
+  }
 }
