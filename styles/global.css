@@ -31,7 +31,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   /* border: 5px solid red; */
   /* overflow: scroll; */
   /* padding: 3rem auto 6rem; */
@@ -54,7 +54,7 @@ body {
   height: 100svh;
   width: 100vw;
   background-size: cover;
-  box-shadow: 0 0 40px 20px black inset
+  box-shadow: 0 0 40px 20px black inset;
 }
 
 * {
@@ -98,3 +98,9 @@ img {
     overflow: scroll;
   }
 }
+
+/* @media (min-width: 600px) {
+  .bgContainer {
+    min-height: fit-content;
+  }
+} */
