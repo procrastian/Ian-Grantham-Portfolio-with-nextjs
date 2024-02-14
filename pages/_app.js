@@ -8,8 +8,11 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider>
       <main className={inconsolata.className}>
-        <div className="blackoutLayer">
-          <Component {...pageProps} />
+        <div className="bgContainer">
+          <div className="colorLayer"></div>
+          <div className="blackoutLayer">
+            <Component {...pageProps} />
+          </div>
         </div>
       </main>
     </ThemeProvider>

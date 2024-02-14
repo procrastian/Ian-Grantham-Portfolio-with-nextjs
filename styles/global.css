@@ -9,8 +9,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
   animation: background-pan 10s linear infinite;
@@ -27,13 +27,34 @@ body {
   }
 }
 
+.bgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* border: 5px solid red; */
+  /* overflow: scroll; */
+  /* padding: 3rem auto 6rem; */
+
+}
+
+.colorLayer {
+  animation: background-pan 10s linear infinite;
+  background: linear-gradient(to right, var(--g1), var(--g2), var(--g1));
+  background-size: 200%;
+  min-height: 100svh;
+  position: absolute;
+}
+
 .blackoutLayer {
   background-image: url("../public/asset/Raw-Seamless-Circuit-Board-Pattern.png");
   position: relative;
-  overflow-x: hidden;
+  /* overflow: hidden; */
   height: 100vh;
+  height: 100svh;
   width: 100vw;
   background-size: cover;
+  box-shadow: 0 0 40px 20px black inset
 }
 
 * {
@@ -58,9 +79,22 @@ img {
   height: 40px;
   width: 40px;
   margin: 5px;
-  transition: all .2s ease-in-out
+  transition: all 0.2s ease-in-out;
 }
 
 .icon:hover {
-  transform: scale(1.2)
+  transform: scale(1.2);
+}
+
+@media (min-width: 1200px) {
+  .bgContainer {
+    /* overflow: hidden; */
+    background-color: black;
+  }
+  .colorLayer,
+  .blackoutLayer {
+    /* border: 10px red solid; */
+    width: 1200px;
+    overflow: scroll;
+  }
 }

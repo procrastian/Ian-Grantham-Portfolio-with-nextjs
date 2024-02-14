@@ -1,7 +1,11 @@
 .container {
+  /* max-height: 90svh; */
+  /* overflow: scroll; */
+  /* border: coral 5px solid; */
   max-width: 36rem;
-  padding: 1rem;
+  /* padding: 1rem; */
   margin: 3rem auto 6rem;
+  box-shadow: 0 0 20px 10px black;
   background-color: black ;
 }
 
