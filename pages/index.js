@@ -22,7 +22,7 @@ export default function Home({ allProjectsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section id="externalLinks" className={utilStyles.headingMd}>
         <Link
           className="tooltip"
           href={"https://github.com/procrastian"}
