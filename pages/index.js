@@ -5,7 +5,7 @@ import { getSortedProjectsData } from "../lib/projects";
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillMail } from "react-icons/ai";
+import { AiFillProfile } from "react-icons/ai";
 
 export async function getStaticProps() {
   const allProjectsData = getSortedProjectsData();
@@ -22,14 +22,33 @@ export default function Home({ allProjectsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <Link href={"https://github.com/procrastian"} target="_blank">
-          <AiFillGithub className="icon"/>
+      <section id="externalLinks" className={utilStyles.headingMd}>
+        <Link
+          className="tooltip"
+          href={"https://github.com/procrastian"}
+          target="_blank"
+        >
+          <AiFillGithub className="icon" />
+          <span class="tooltiptext">Github</span>
         </Link>
-        <Link href={"http://www.linkedin.com/in/dev-ian-grantham"} target="_blank">
-          <AiFillLinkedin className="icon"/>
+        <Link
+          className="tooltip"
+          href={"http://www.linkedin.com/in/dev-ian-grantham"}
+          target="_blank"
+        >
+          <AiFillLinkedin className="icon tooltip" />
+          <span class="tooltiptext">LinkedIn</span>
         </Link>
-        {/* <Link href={"mailto:dev.iangrantham@gmail.com"} target="_blank"><AiFillMail /></Link> */}
+        <Link
+          className="tooltip"
+          href={
+            "https://app.enhancv.com/share/b0d4df68/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+          }
+          target="_blank"
+        >
+          <AiFillProfile className="icon" />
+          <span class="tooltiptext">CV</span>
+        </Link>
       </section>
       <section className={utilStyles.headingMd}>
         <p>
