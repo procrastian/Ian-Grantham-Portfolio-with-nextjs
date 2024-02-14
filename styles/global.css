@@ -99,8 +99,6 @@ img {
   }
 }
 
-/* @media (min-width: 600px) {
-  .bgContainer {
-    min-height: fit-content;
-  }
-} */
+@media (max-width: 600px) {
+
+}
