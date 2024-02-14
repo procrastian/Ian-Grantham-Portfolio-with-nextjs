@@ -3,7 +3,6 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedProjectsData } from "../lib/projects";
 import Link from "next/link";
-import Date from "../components/date";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
@@ -42,12 +41,12 @@ export default function Home({ allProjectsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>My Projects</h2>
         <ul className={utilStyles.list}>
-          {allProjectsData.map(({ id, date, title }) => (
+          {allProjectsData.map(({ id, title, tagline }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/projects/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={date} />
+                <p>{tagline}</p>
               </small>
             </li>
           ))}

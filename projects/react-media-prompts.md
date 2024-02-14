@@ -3,7 +3,7 @@ title: 'React media prompts'
 date: '2024-02-14'
 view: https://procrastian.github.io/Media-Prompts-Generator-using-React/
 github: https://github.com/procrastian/Media-Prompts-Generator-using-React
-tagline: 'A tool to generate randomised prompts for short film topics.'
+tagline: 'A tool to generate randomised prompts for short film topics'
 ---
 
 A bespoke app designed and built myself to provide a tool to help film students generate randomised, creative prompts for short film topics.
