@@ -88,7 +88,6 @@ img {
   .colorLayer,
   .blackoutLayer {
     width: 1200px;
-    /* overflow: scroll; */
   }
 }
 

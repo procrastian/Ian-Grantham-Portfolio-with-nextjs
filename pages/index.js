@@ -5,7 +5,7 @@ import { getSortedProjectsData } from "../lib/projects";
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillMail } from "react-icons/ai";
+import { AiFillProfile } from "react-icons/ai";
 
 export async function getStaticProps() {
   const allProjectsData = getSortedProjectsData();
@@ -29,7 +29,7 @@ export default function Home({ allProjectsData }) {
         <Link href={"http://www.linkedin.com/in/dev-ian-grantham"} target="_blank">
           <AiFillLinkedin className="icon"/>
         </Link>
-        {/* <Link href={"mailto:dev.iangrantham@gmail.com"} target="_blank"><AiFillMail /></Link> */}
+        <Link href={"https://app.enhancv.com/share/b0d4df68/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"} target="_blank"><AiFillProfile className="icon"/></Link>
       </section>
       <section className={utilStyles.headingMd}>
         <p>
