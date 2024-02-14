@@ -23,13 +23,32 @@ export default function Home({ allProjectsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <Link href={"https://github.com/procrastian"} target="_blank">
-          <AiFillGithub className="icon"/>
+        <Link
+          className="tooltip"
+          href={"https://github.com/procrastian"}
+          target="_blank"
+        >
+          <AiFillGithub className="icon" />
+          <span class="tooltiptext">Github</span>
         </Link>
-        <Link href={"http://www.linkedin.com/in/dev-ian-grantham"} target="_blank">
-          <AiFillLinkedin className="icon"/>
+        <Link
+          className="tooltip"
+          href={"http://www.linkedin.com/in/dev-ian-grantham"}
+          target="_blank"
+        >
+          <AiFillLinkedin className="icon tooltip" />
+          <span class="tooltiptext">LinkedIn</span>
         </Link>
-        <Link href={"https://app.enhancv.com/share/b0d4df68/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"} target="_blank"><AiFillProfile className="icon"/></Link>
+        <Link
+          className="tooltip"
+          href={
+            "https://app.enhancv.com/share/b0d4df68/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+          }
+          target="_blank"
+        >
+          <AiFillProfile className="icon" />
+          <span class="tooltiptext">CV</span>
+        </Link>
       </section>
       <section className={utilStyles.headingMd}>
         <p>
