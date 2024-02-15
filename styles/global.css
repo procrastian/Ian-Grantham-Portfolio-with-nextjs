@@ -11,43 +11,9 @@ body {
   margin: 0;
   line-height: 1.6;
   font-size: 18px;
-  animation: background-pan 10s linear infinite;
-  background: linear-gradient(to right, var(--g1), var(--g2), var(--g1));
+  /* animation: background-pan 10s linear infinite;
+  background: linear-gradient(to right, var(--g1), var(--g2), var(--g1)); */
   background-size: 200%;
-}
-
-@keyframes background-pan {
-  from {
-    background-position: 0% center;
-  }
-  to {
-    background-position: -200% center;
-  }
-}
-
-.bgContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.colorLayer {
-  animation: background-pan 10s linear infinite;
-  background: linear-gradient(to right, var(--g1), var(--g2), var(--g1));
-  background-size: 200%;
-  min-height: 100svh;
-  position: absolute;
-}
-
-.blackoutLayer {
-  background-image: url("../public/asset/Raw-Seamless-Circuit-Board-Pattern.png");
-  position: relative;
-  min-height: 100vh;
-  height: 100svh;
-  width: 100vw;
-  background-size: cover;
-  box-shadow: 0 0 40px 20px black inset;
 }
 
 * {
@@ -59,7 +25,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a:visited:hover {
   /* text-decoration: underline; */
   color: var(--g1);
 }
@@ -84,6 +50,44 @@ img {
   transform: scale(1.2);
 }
 
+/*** BACKGROUND ***/
+
+.bgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.colorLayer, .blackoutLayer {
+    min-height: 100vh;
+    height: 100svh;
+    width: 100vw;
+}
+
+.colorLayer {
+  animation: background-pan 10s linear infinite;
+  background: linear-gradient(to right, var(--g1), var(--g2), var(--g1));
+  background-size: 200%;
+  position: absolute;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+
+.blackoutLayer {
+  background-image: url("../public/asset/Raw-Seamless-Circuit-Board-Pattern.png");
+  position: relative;
+  background-size: cover;
+  box-shadow: 0 0 40px 20px black inset;
+}
+
 /*** MEDIA QUERIES ***/
 
 @media (min-width: 1200px) {
@@ -100,9 +104,9 @@ img {
   .bgContainer {
     height: 100%;
   }
-  .blackoutLayer {
+  /* .blackoutLayer, .colorLayer {
     height: 100%;
-  }
+  } */
 }
 
 #externalLinks {
